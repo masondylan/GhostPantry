@@ -1,4 +1,4 @@
-const CACHE='ghostpantry-v0.1.4';
+const CACHE='ghostpantry-v0.1.5';
 const ASSETS=['/','/static/app.css','/static/app.js','/static/icon-192.png','/static/icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).catch(()=>{})));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));

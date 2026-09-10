@@ -13,7 +13,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-APP_VERSION = "0.1.4"
+APP_VERSION = "0.1.5"
 DB_PATH = Path(os.getenv("GHOSTPANTRY_DB", "/data/ghostpantry.db"))
 COOKIE_SECURE_MODE = os.getenv("COOKIE_SECURE", "auto").lower()
 OFF_UA = os.getenv("OPENFOODFACTS_USER_AGENT", f"GhostPantry/{APP_VERSION} (self-hosted)")

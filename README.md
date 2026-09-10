@@ -1,4 +1,4 @@
-# GhostPantry v0.1.4
+# GhostPantry v0.1.5
 
 Mobile-first, self-hosted food inventory for one or more households.
 
