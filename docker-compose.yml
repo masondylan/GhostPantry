@@ -1,0 +1,15 @@
+services:
+  ghostpantry:
+    build: .
+    image: ghostpantry:0.1.4
+    container_name: GhostPantry
+    restart: unless-stopped
+    ports:
+      - "9283:8000"
+    environment:
+      TZ: ${TZ:-Etc/UTC}
+      GHOSTPANTRY_DB: /data/ghostpantry.db
+      COOKIE_SECURE: ${COOKIE_SECURE:-auto}
+      OPENFOODFACTS_USER_AGENT: "GhostPantry/0.1.4 (self-hosted household inventory)"
+    volumes:
+      - ../data:/data
