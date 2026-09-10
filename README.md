@@ -1,10 +1,37 @@
 # GhostPantry
 
+![GhostPantry](assets/ghostpantry_smarter_pantry_management.png)
+
 **GhostPantry** is a mobile-first, self-hosted food inventory and expiration tracker designed for one or more households.
 
 Created and maintained by **Specter42**.
 
-GhostPantry focuses on making household food inventory simple: scan an item, choose where it belongs, enter the quantity and expiration date, and you're done.
+> **Household inventory, without the clutter.**
+
+GhostPantry is built around a simple workflow: scan an item, choose where it belongs, enter the quantity and expiration date, and save it.
+
+---
+
+
+## Screenshots
+
+### Dashboard
+
+![GhostPantry Dashboard](assets/screenshots/dashboard.png)
+
+### Inventory
+
+![GhostPantry Inventory](assets/screenshots/inventory.png)
+
+### Shopping List
+
+![GhostPantry Shopping List](assets/screenshots/shopping-list.png)
+
+### Mobile Barcode Scanner
+
+![GhostPantry Mobile Barcode Scanner](assets/screenshots/scanner.png)
+
+---
 
 ## Features
 
@@ -39,6 +66,8 @@ GhostPantry focuses on making household food inventory simple: scan an item, cho
 - Unraid Community Applications support
 - Dark black/red GhostPantry interface
 
+---
+
 ## Typical Workflow
 
 1. Open GhostPantry on your phone.
@@ -51,7 +80,9 @@ GhostPantry focuses on making household food inventory simple: scan an item, cho
 8. Enter the expiration or best-before date.
 9. Save the item.
 
-Previously scanned products can be quickly added again later.
+Previously scanned products can be added again quickly later.
+
+---
 
 ## Multiple Households
 
@@ -68,7 +99,9 @@ For example:
   - Refrigerator
   - Freezer
 
-Administrators can manage every household while regular users can be assigned to their own household.
+Administrators can manage every household, while regular users can be assigned to their own household.
+
+---
 
 ## Shopping Lists
 
@@ -76,11 +109,13 @@ Inventory items can be added directly to the household shopping list.
 
 This makes it easy to notice something is getting low and immediately add it to the next shopping trip without leaving the inventory screen.
 
+---
+
 ## Expiration Tracking
 
 GhostPantry tracks expiration dates by inventory lot.
 
-This means two packages of the same product can have different expiration dates without being combined incorrectly.
+That means two packages of the same product can have different expiration dates without being combined incorrectly.
 
 The dashboard highlights:
 
@@ -89,6 +124,8 @@ The dashboard highlights:
 - Total inventory
 - Shopping-list items
 
+---
+
 ## Barcode Scanning
 
 GhostPantry supports barcode scanning using a phone or tablet camera.
@@ -96,6 +133,8 @@ GhostPantry supports barcode scanning using a phone or tablet camera.
 For browser camera access, GhostPantry should be accessed through **HTTPS**.
 
 Product information may be retrieved from public barcode/product databases such as Open Food Facts.
+
+---
 
 ## Progressive Web App
 
@@ -118,6 +157,8 @@ Tap:
 **Share → Add to Home Screen**
 
 Then enable **Open as Web App** if the option is shown and tap **Add**.
+
+---
 
 ## Unraid
 
@@ -167,6 +208,8 @@ Docker image:
 ghcr.io/masondylan/ghostpantry:latest
 ```
 
+---
+
 ## Docker
 
 GhostPantry can also be run directly with Docker:
@@ -187,9 +230,11 @@ Then open:
 http://SERVER-IP:9283
 ```
 
+---
+
 ## Reverse Proxy / HTTPS
 
-For phone-camera barcode scanning, using HTTPS is recommended.
+For phone-camera barcode scanning, HTTPS is recommended.
 
 GhostPantry works behind reverse proxies such as:
 
@@ -203,6 +248,8 @@ Example reverse-proxy destination:
 ```text
 http://SERVER-IP:9283
 ```
+
+---
 
 ## First Run
 
@@ -220,9 +267,11 @@ My House
 
 You can rename it or create additional households afterward.
 
+---
+
 ## Data Storage
 
-GhostPantry stores its persistent application data in:
+GhostPantry stores persistent application data in:
 
 ```text
 /data
@@ -231,6 +280,8 @@ GhostPantry stores its persistent application data in:
 When running on Unraid, make sure `/data` is mapped to persistent appdata storage.
 
 Back up this directory before major upgrades or migrations.
+
+---
 
 ## Updating
 
@@ -250,6 +301,8 @@ Then recreate the container using the same persistent `/data` volume.
 
 Your household, user, inventory, and shopping-list information remains in the persistent data directory.
 
+---
+
 ## Source Code
 
 GhostPantry source code:
@@ -264,17 +317,23 @@ Docker image:
 
 https://github.com/masondylan/GhostPantry/pkgs/container/ghostpantry
 
+---
+
 ## Releases
 
 GhostPantry releases are available at:
 
 https://github.com/masondylan/GhostPantry/releases
 
+---
+
 ## Support / Bug Reports
 
 For bugs, feature requests, or other GhostPantry issues, use the GitHub issue tracker:
 
 https://github.com/masondylan/GhostPantry/issues
+
+---
 
 ## License
 
